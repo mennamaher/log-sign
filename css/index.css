@@ -1,0 +1,22 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/13.jpg);
+    background-size:cover;
+    /* height: 100vh; */
+    
+}
+
+.box{
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)); */
+    backdrop-filter: blur(20px);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.pic{
+    width: 12%;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+<body >
+
+    <div class="container pt-5" id="btnUp" >
+        <div class="row d-flex justify-content-center pt-5">
+            <div class=" box  col-10 d-flex p-4 shadow">
+                <div class=" group col-5 m-auto shadow d-flex flex-column gap-3 p-3">
+                    <h3 class=" text-center text-white-50"> Register </h3>
+                    
+                        <div class=" d-flex flex-column gap-3 p-3">
+                            <input oninput="ValidationName()" class=" form-control" id="NameId" type="text" placeholder="Enter Your Name">
+                            <p id="validname" class=" d-none text-white">Name must have more than 2 characters </p>
+                            <input oninput="ValidationEmail()" class=" form-control" id="EmailId" type="email" placeholder="Enter Your Email">
+                            <p id="validemail" class=" d-none text-white">Email must be a valid one </p>
+                            <input oninput="ValidationPass()" class=" form-control" id="PassId" type="password" placeholder="Enter Your Password">
+                            <p id="validpass" class=" d-none text-white">password must have more than 5 characters </p>
+
+                            <p id="alert-msg" class=" text-white text-center"></p>
+                            <button onclick="save()" class=" btn btn-outline-light px-5" id="btnUp">Sign Up</button>
+                            </div>
+                    
+                    <p class=" text-white-50">You have an account? <span><a href="../index.html">sign in</a></span></p>
+                </div>
+                <div class=" col-4 position-relative">
+                    <img class=" m-auto img-fluid " src="../images/5-removebg-preview.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+</body>
+</html>
